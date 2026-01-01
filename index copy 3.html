@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main copy3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>CapMovie - Streaming</title>
+</head>
+<body>
+    <header>    
+        <a href="#" class="logo">CapMovie</a>    
+        <ul class="nav">
+            <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="#">Adults</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Trend</a></li>
+            <li><a href="#">My list</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div> 
+    </header>
+
+    <div class="banner">
+        <div class="content active">
+            <img src="/Assignment/83webp.webp" alt="movie-title" class="movie-title">
+            <h4>
+                <span>2011 / </span><span><i>12+ / </i></span>
+                <span>2h 4min / </span><span>Action</span>
+            </h4>
+            <p>
+                Captain America: The First Avenger is a 2011 American superhero
+                film based on the Marvel Comics character Captain America. 
+                It is the fifth film in the Marvel Cinematic Universe (MCU) and part of Phase One.
+            </p>
+            <div class="button-group">
+                <a href="cap.htm" class="btn-play"><i class="fa-solid fa-play"></i> Watch</a>
+                <a href="#" class="btn-list"><i class="fa-solid fa-plus"></i> My list</a>
+            </div>
+            
+            <div class="trailer-section">
+                <a href="cap.htm" class="play-trailer">
+                    <i class="fa-solid fa-circle-play"></i>Watch Trailer
+                </a>
+                <ul class="sci">
+                    <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="carousel-box">
+            <div class="carousel">
+                <a class="carousel-item" href="index copy3.html">
+                    <img src="../Assignment/the-first-avenger-movie-poster.webp" alt="the-first-avenger-movie-poster">
+                </a>               
+                <a class="carousel-item" href="index copy 4.html">
+                    <img src="../Assignment/infinities.jpg" alt="infinities">
+                </a>  
+                 <a class="carousel-item" href="index.html">
+                    <img src="../Assignment/no way home.webp" alt="no way home">
+                </a>   
+                  <a class="carousel-item" href="index copy1.html">
+                    <img src="../Assignment/iron.webp" alt="iron">
+                </a>           
+                <a class="carousel-item" href="index copy 2.html">
+                    <img src="../Assignment/avatar_fire_and_ash.webp" alt="avatar_fire_and_ash">
+                </a>
+              
+               
+            </div>
+        </div>
+    </div>
+         <div class="trailer">
+            <video 
+                 src="https://www.youtube.com/watch?v=JerVrbLldXw"
+                 muted
+                 controls="true"
+                 autoplay="true"
+                 ></video>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').carousel({
+                dist: -100,
+                shift: 0,
+                padding: 20,
+                numVisible: 5
+            });
+        });
+    </script> 
+</body>
+</html>
